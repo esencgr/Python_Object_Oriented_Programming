@@ -7,16 +7,16 @@ class TV():
         self.channel_list = channel_list
         self.current_channel = current_channel
 
+
     def info(self):
         print(f"\nState of Television\n  sound = {self.sound}\n  channel list = {self.channel_list}\n  current channel = {self.current_channel}") 
 
     # def __str__(self):
     #     return f"\nState of Television\n  sound = {self.sound}\n  channel list = {self.channel_list}\n  current channel = {self.current_channel}"
 
+
     def set_sound(self):
-
         print("Current sound level : ", self.sound)        
-
         while(True):
             res = input("\nPress - | + | S(save)\n") 
             
@@ -34,16 +34,15 @@ class TV():
                 print("Sound is update : ", self.sound)
                 break 
 
-    def add_channel(self):
 
+    def add_channel(self):
         print("Current channel list : ", self.channel_list)
         new_ch = input("\nEnter new channel name : ")
         self.channel_list.append(new_ch)
         print("Updated channel list : ", self.channel_list)
-    
+
 
     def change_channel(self):
-
         while(True):
             print("_"*20)
             print("\nChannel list :", self.channel_list)
@@ -78,12 +77,10 @@ class TV():
                 print("Save current channel")
                 break 
 
-# ==========================================
+# ==============================================================================
 
 def main():
-    
     tv = TV()
-
     while(True):
         os.system("clear")
         print("""
