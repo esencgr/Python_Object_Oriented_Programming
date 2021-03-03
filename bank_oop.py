@@ -13,8 +13,7 @@ class Bank:
 
     def be_churn(self, no, name, password):
         self.churn_list.append(Churn(no, name, password))
-p
-    
+
 def main():
     bank = Bank()
     while True:
