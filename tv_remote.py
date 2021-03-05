@@ -1,8 +1,6 @@
 import os
 
-
 class TV():
-
     def __init__(self, sound=0, channel_list=["fox"], current_channel="fox"):
         self.sound = sound
         self.channel_list = channel_list
@@ -125,7 +123,6 @@ def main():
         if case == "q" or case == "Q":
             print("TV CLOSING..")
             break
-
 
 if __name__ == ("__main__"):
     main()
