@@ -29,7 +29,6 @@ def main():
             print("current ids : ", no_lst)
             no = input("id no : ")
 
-
             if no in no_lst:
                 for c in bank.churn_list:
                     if no == c.no:
